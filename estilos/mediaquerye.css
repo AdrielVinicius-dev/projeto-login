@@ -7,19 +7,27 @@
 
 
     #login{
+        display: flex;
         width: 80%;
-        height: 700px;
+        height: 400px;
     }
 
     #imagem{
-        float: left;
         width: 40%;
         height: 100%;
     }
 
     #formulario{
-        float: right;
         width: 60%;
+    }
+
+    #formulario h1{
+        font-size: 2em;
+    }
+
+    #formulario p{
+        margin: 15px 0;
+        font-size: 1em;
     }
 
     
@@ -31,18 +39,29 @@
     }
 
     #login{
-        display: flex;
+        height: 400px;
         width: 950px;
 
     }
 
     #imagem{
+        float: right;
         width: 45%;
         height: 100%;
     }
 
     #formulario{
+        float: left;
         width: 55%;
+    }
+
+    #formulario h1{
+        font-size: 2em;
+    }
+
+    #formulario p{
+        margin: 15px 0;
+        font-size: 1em;
     }
     
 }

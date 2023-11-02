@@ -23,13 +23,13 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     height: 600px;
     width: 350px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.432);
+    transform: translate(-50%, -50%);
     transition: width .5s, height .5s;
     transition-timing-function: ease;
     
@@ -47,8 +47,99 @@ main{
 
 #formulario{
     display: block;
-    padding: 10px;
+    padding: 10px 20px;
     text-align: justify;
 }
+
+#formulario h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario p{
+    text-align: justify;
+    font-size: .8em;
+}
+
+form div.campo {
+    background-color: rgb(170, 141, 94);
+    display: block;
+    width: 100%;
+    height: 37px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+div.campo label{
+    display: none;
+}
+
+div.campo span{
+    color: rgb(235, 228, 228);
+    font-size: 1.9em;
+    height: 40px;
+    width: 40px;
+    padding: 5px ;
+}
+
+div.campo input{
+    background-color: rgb(226, 203, 166);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 2px solid rgb(170, 141, 94);
+    border-radius: 8px;
+    padding: 10px;
+    transform: translateY(-10px);
+}
+
+div.campo input:focus-within{
+    background-color: white;
+}
+
+ 
+
+form input[type=submit] {
+    display: block;
+    margin: 15px 0 10px 0;
+    padding: 7px;
+    font-size: 15px;
+    width: 100%;
+    background-color: rgb(170, 141, 94);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input[type=submit]:hover{
+    background-color: rgb(95, 65, 20);
+    transition-duration: .5s;
+}
+
+
+form a.botao{
+    display: block;
+    text-align: center;
+    background-color: rgb(170, 141, 94);
+    border: 2px black solid;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+form a.botao span{
+    font-size: 1em;
+}
+
+form a.botao:hover{
+    background-color: rgb(95, 65, 20);
+    transition-duration: .5s;
+    text-decoration: underline;
+
+}
+
+
 
 
